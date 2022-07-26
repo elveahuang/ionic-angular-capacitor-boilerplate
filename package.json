@@ -5,8 +5,9 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
+        "start:github": "ng serve --configuration=github",
         "build": "ng build",
-        "build:github": "ng build --base-href /ionic-angular-capacitor-boilerplate/",
+        "build:github": "ng build --configuration=github",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
