@@ -9,17 +9,16 @@
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "importHelpers": true,
-        "target": "esnext",
-        "module": "esnext",
-        "lib": ["es2018", "dom"],
+        "target": "ES2015",
+        "module": "ESNext",
+        "lib": ["ESNext", "dom"],
         "paths": {
             "@/*": ["./src/*"]
         }
     },
     "angularCompilerOptions": {
-        "enableI18nLegacyMessageIdFormat": false,
-        "strictInjectionParameters": true,
-        "strictInputAccessModifiers": true,
-        "strictTemplates": true
+        "fullTemplateTypeCheck": true,
+        "strictTemplates": true,
+        "trace": true
     }
 }

@@ -1,7 +1,6 @@
 {
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
     "version": 1,
-    "defaultProject": "app",
     "newProjectRoot": "projects",
     "projects": {
         "app": {
@@ -19,7 +18,16 @@
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
                         "tsConfig": "tsconfig.app.json",
-                        "allowedCommonJsDependencies": ["localforage"],
+                        "allowedCommonJsDependencies": [
+                            "lodash",
+                            "chart.js",
+                            "crypto-js",
+                            "node-forge",
+                            "pdfjs-dist",
+                            "cropperjs",
+                            "localforage",
+                            "vconsole"
+                        ],
                         "assets": [
                             {
                                 "glob": "**/*",
@@ -39,7 +47,7 @@
                         "extractLicenses": false,
                         "buildOptimizer": false,
                         "sourceMap": true,
-                        "optimization": false,
+                        "optimization": true,
                         "namedChunks": true
                     },
                     "configurations": {
@@ -50,7 +58,14 @@
                                     "with": "src/environments/environment.prod.ts"
                                 }
                             ],
-                            "optimization": true,
+                            "optimization": {
+                                "scripts": true,
+                                "styles": {
+                                    "minify": false,
+                                    "inlineCritical": true
+                                },
+                                "fonts": true
+                            },
                             "outputHashing": "all",
                             "sourceMap": false,
                             "namedChunks": false,
@@ -74,7 +89,14 @@
                                     "with": "src/environments/environment.prod.ts"
                                 }
                             ],
-                            "optimization": true,
+                            "optimization": {
+                                "scripts": true,
+                                "styles": {
+                                    "minify": false,
+                                    "inlineCritical": true
+                                },
+                                "fonts": true
+                            },
                             "outputHashing": "all",
                             "sourceMap": false,
                             "namedChunks": false,
@@ -172,8 +194,8 @@
         }
     },
     "cli": {
-        "analytics": false,
-        "defaultCollection": "@ionic/angular-toolkit"
+        "schematicCollections": ["@ionic/angular-toolkit"],
+        "analytics": false
     },
     "schematics": {
         "@ionic/angular-toolkit:component": {
