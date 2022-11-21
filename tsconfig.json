@@ -12,7 +12,8 @@
         "skipLibCheck": true,
         "emitDecoratorMetadata": true,
         "allowSyntheticDefaultImports": true,
-        "target": "ES2015",
+        "useDefineForClassFields": false,
+        "target": "ESNext",
         "module": "ESNext",
         "lib": ["ESNext", "dom"],
         "paths": {
