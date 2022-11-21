@@ -39,7 +39,7 @@
         "ionicons": "^6.0.4",
         "lodash-es": "^4.17.21",
         "rxjs": "^7.5.7",
-        "swiper": "^8.4.4",
+        "swiper": "^8.4.5",
         "tslib": "^2.4.1",
         "vconsole": "^3.15.0",
         "zone.js": "^0.12.0"
