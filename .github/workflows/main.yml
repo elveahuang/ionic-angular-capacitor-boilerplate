@@ -22,8 +22,10 @@ jobs:
           run_install: false
       - name: Build
         run: |
-          npm ci
-          npm run build:github
+          npm -v
+          pnpm -v
+          pnpm install
+          pnpm run build:github
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
