@@ -21,9 +21,9 @@
         }
     },
     "angularCompilerOptions": {
-        "compilationMode": "partial",
-        "fullTemplateTypeCheck": true,
-        "strictTemplates": true,
-        "trace": true
+        "enableI18nLegacyMessageIdFormat": false,
+        "strictInjectionParameters": true,
+        "strictInputAccessModifiers": true,
+        "strictTemplates": true
     }
 }
