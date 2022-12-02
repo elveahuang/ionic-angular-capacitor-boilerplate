@@ -6,8 +6,9 @@
             "files": ["*.ts"],
             "parser": "@typescript-eslint/parser",
             "parserOptions": {
-                "ecmaVersion": 2020,
-                "sourceType": "module"
+                "ecmaVersion": 2022,
+                "sourceType": "module",
+                "project": "./tsconfig.json"
             },
             "extends": [
                 "eslint:recommended",

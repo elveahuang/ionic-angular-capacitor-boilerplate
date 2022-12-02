@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
     appId: 'cn.elvea.app.capacitor',
-    appName: 'ionic-angular-boilerplate',
+    appName: 'App',
     webDir: 'www',
     bundledWebRuntime: false,
 };
